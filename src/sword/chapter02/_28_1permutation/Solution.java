@@ -1,4 +1,4 @@
-package sword.chapter02._28permutation;
+package sword.chapter02._28_1permutation;
 
 public class Solution {
 	public static void main(String[] args) {
