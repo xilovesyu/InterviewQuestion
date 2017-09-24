@@ -3,11 +3,11 @@ package sword.chapter02._34uglynumber;
 public class Solution {
 	public static void main(String[] args) {
 		long startTime=System.currentTimeMillis();
-		System.out.println(KthUglyNumber(1500));
+		System.out.println(KthUglyNumber(20));
 		long endTime=System.currentTimeMillis();
 		System.out.println("time 1:"+(endTime-startTime));
 		startTime=System.currentTimeMillis();
-		System.out.println(KthUglyNumber2(1500));
+		System.out.println(KthUglyNumber2(86));
 		endTime=System.currentTimeMillis();
 		System.out.println("time 2:"+(endTime-startTime));
 	}

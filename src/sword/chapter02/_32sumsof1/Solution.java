@@ -2,7 +2,7 @@ package sword.chapter02._32sumsof1;
 
 public class Solution {
 	public static void main(String[] args) {
-		int n=21345;
+		int n=2048;
 		System.out.println(NumbersOf1(n));
 		System.out.println(NumbersOf1Another(n));
 	}
