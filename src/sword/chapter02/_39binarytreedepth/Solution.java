@@ -23,7 +23,8 @@ public class Solution {
 		temp3.right=temp4;
 		
 		System.out.println(depth(root1));
-		System.out.println(isBalance(root1));
+	//	System.out.println(isBalance(root1));
+		System.out.println(isBalance2(root1, new int[1]));
 	}
 	public static boolean isBalance(TreeNode root){
 		if(root==null){
@@ -45,5 +46,19 @@ public class Solution {
 		
 		return leftDepth>rightDepth?leftDepth+1:rightDepth+1;
 	}
-	
+	public static boolean isBalance2(TreeNode root,int[] depth){
+		if(root==null){
+			depth[0]=0;
+			return true;
+		}
+		int[] left = new int[1],right = new int[1];
+		if(isBalance2(root.left,left)&&isBalance2(root.right,right)){
+			int diff=left[0]-right[0];
+			if(diff<=1&&diff>=-1){
+				depth[0]=1+(left[0]>right[0]?left[0]:right[0]);
+				return true;
+			}
+		}
+		return false;
+	}
 }
